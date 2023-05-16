@@ -1,0 +1,25 @@
+.main {
+  padding-top: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Titan One", cursive;
+}
+
+.main > h1 {
+  color: rgb(114, 31, 41);
+  font-size: 3em;
+  padding: 5%;
+}
+
+.main > .startGame {
+  width: fit-content;
+  padding: 1em 1.5em;
+  font-size: 1.3em;
+  font-family: "Titan One", cursive;
+  border: 2px solid rgb(114, 31, 41);
+  color: rgba(168, 34, 50, 0.889);
+  background-color: rgb(83, 189, 83);
+  border-radius: 6px;
+}
