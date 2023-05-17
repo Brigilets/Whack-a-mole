@@ -3,6 +3,7 @@
   background-color: rgb(226, 167, 65);
   padding: 0.2em 0.6em;
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   color: rgb(117, 18, 29);

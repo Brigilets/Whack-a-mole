@@ -8,7 +8,7 @@ import {
 import "./App.css";
 //pages
 import Home from "./components/pages/Home";
-import GameScreen from "./components/pages/GameScreen";
+import GameScreen from "./components/pages/no-redux-game-page/GameScreen";
 import GameScreenRedux from "./components/pages/GameScreenRedux";
 
 const router = createBrowserRouter(

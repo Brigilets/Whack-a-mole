@@ -1,6 +1,6 @@
 import { useEffect, useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
-// import { RootState } from "../../store";
+
 import {
   setScore,
   setTime,
@@ -8,9 +8,11 @@ import {
   setGameStarted,
   setHolePositions,
 } from "../../redux/actions/gameActions";
-import styles from "./GameScreen.module.css";
+import styles from "./GameScreenRedux.module.css";
 import GameOver from "../GameOver";
 import { RootState } from "../../redux/reducers/rootReducer";
+
+import Leaderboard from "../Leaderboard";
 
 type Position = {
   x: number;
@@ -100,25 +102,31 @@ const GameScreenRedux = () => {
         ) : null}
         <span>Time Left: {time > 0 ? time : 0}</span>
       </section>
-      <section className={styles.board}>
-        {holePositions.map((position: Position, index: number) => (
-          <img
-            key={index}
-            src={
-              position.x === 0 && position.y === 0
-                ? "./../assets/WAM_Mole.png"
-                : "./../assets/WAM_Hole.png"
-            }
-            alt={position.x === 0 && position.y === 0 ? "mole" : "hole"}
-            onClick={
-              position.x === 0 && position.y === 0
-                ? handleMoleClick
-                : handleHoleClick
-            }
-            style={{ left: position.x, top: position.y }}
-          />
-        ))}
-      </section>
+      {!gameOver ? (
+        <section className={styles.board}>
+          {holePositions.map((position: Position, index: number) => (
+            <img
+              key={index}
+              src={
+                position.x === 0 && position.y === 0
+                  ? "./../assets/WAM_Mole.png"
+                  : "./../assets/WAM_Hole.png"
+              }
+              alt={position.x === 0 && position.y === 0 ? "mole" : "hole"}
+              onClick={
+                position.x === 0 && position.y === 0
+                  ? handleMoleClick
+                  : handleHoleClick
+              }
+              style={{ left: position.x, top: position.y }}
+            />
+          ))}
+        </section>
+      ) : (
+        <section>
+          <Leaderboard />
+        </section>
+      )}
     </div>
   );
 };

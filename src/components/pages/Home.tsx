@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className={styles.main}>
       <h1>Ready for some moles?</h1>
-      <Leaderboard />
+      {/* <Leaderboard /> */}
       <NavLink to="game" className="startGame">
         Get smashing!!!
       </NavLink>

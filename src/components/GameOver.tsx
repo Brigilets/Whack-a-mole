@@ -9,6 +9,7 @@ import {
   setHolePositions,
 } from "../redux/actions/gameActions";
 import { initialHolePositions } from "../redux/reducers/gameReducer";
+import Leaderboard from "./Leaderboard";
 
 type GameOverProps = {
   score: number;
@@ -43,7 +44,8 @@ const GameOver: FC<GameOverProps> = ({ score, className }) => {
           X
         </NavLink>
       </section>
-      <span>{score}</span>
+
+      <span> {score}</span>
     </div>
   );
 };

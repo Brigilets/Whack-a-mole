@@ -1,9 +1,10 @@
 import { useCallback, useEffect, useState } from "react";
 import styles from "./GameScreen.module.css";
-import GameOver from "../GameOver";
+import GameOver from "../../GameOver";
 import "../../App.css";
 
-import { Position } from "../../lib/gameTypes";
+import { Position } from "../../../lib/gameTypes";
+import Leaderboard from "../../Leaderboard";
 
 const GameScreen = () => {
   const [score, setScore] = useState<number>(0);
@@ -122,7 +123,6 @@ const GameScreen = () => {
                 ? handleMoleClick
                 : handleHoleClick
             }
-            className={position.x === 0 && position.y === 0 ? "mole" : "hole"}
             style={{ left: position.x, top: position.y }}
           />
         ))}

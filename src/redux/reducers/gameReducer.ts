@@ -8,7 +8,7 @@ import {
 } from "../actions/actionTypes";
 
 export const initialHolePositions = [
-  { x: 0, y: 0 }, // Mole
+  { x: 0, y: 0 },
   { x: 100, y: 0 },
   { x: 200, y: 0 },
   { x: 300, y: 0 },

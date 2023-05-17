@@ -1,15 +1,26 @@
 .main {
-  cursor: url("../../assets/WAM_Hammer.png"), auto;
+  padding-top: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Titan One", cursive;
 }
 .infoPanel {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around !important;
   align-items: center;
   font-family: "Titan One", cursive;
   font-size: 2.5em;
   padding-top: 2em;
   color: rgb(204, 47, 65);
   height: 15%;
+}
+.infoPanel > * {
+  margin: 0 1em;
+  text-shadow: 4px 4px 8px rgba(204, 185, 74, 0.743),
+    -4px -4px 8px rgba(246, 231, 69, 0.9);
 }
 
 .board {
@@ -27,7 +38,7 @@
   height: 100px;
   width: 100px;
   border: none;
-  /* margin: 1.5em; */
+
   width: inherit;
   box-sizing: border-box;
   display: flex;
@@ -45,7 +56,7 @@
   color: rgb(204, 47, 65);
   background-color: rgb(226, 167, 65);
   border-radius: 6px;
-  cursor: url("../../assets/WAM_Hammer.png");
+  cursor: url("../../assets/WAM_Hammer.png"), default;
 }
 .gameOver {
   font-size: 0.8em;
@@ -56,7 +67,7 @@
   justify-content: center;
   align-items: center;
   background-color: rgb(240, 191, 117);
-  z-index: 2;
+  margin-bottom: 1em;
 }
 
 .gameOver > section {
