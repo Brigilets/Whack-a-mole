@@ -1,0 +1,15 @@
+.main {
+  padding-top: 12em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Titan One", cursive;
+}
+
+.main > h1 {
+  color: rgb(117, 18, 29);
+  font-size: 4em;
+  text-shadow: 4px 4px 8px rgba(204, 185, 74, 0.743),
+    -4px -4px 8px rgba(246, 231, 69, 0.743);
+}
