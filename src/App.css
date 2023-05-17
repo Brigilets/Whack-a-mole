@@ -1,19 +1,21 @@
 .root {
   margin: 0;
 }
+
 .App {
   margin-top: none;
   background-image: url("./assets/WAM_bg.jpg");
   height: 100vh;
-  background-size: cover;
 }
+
 .startGame {
   width: fit-content;
   padding: 1em 1.5em;
   font-size: 1.3em;
   font-family: "Titan One", cursive;
-  border: 2px solid rgb(114, 31, 41);
-  color: rgba(168, 34, 50, 0.889);
+  border: 4px ridge rgb(179, 38, 54);
+  color: rgba(206, 33, 53, 0.889);
   background-color: rgb(83, 189, 83);
   border-radius: 6px;
+  text-decoration: none;
 }
