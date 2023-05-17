@@ -3,10 +3,7 @@ import styles from "./GameScreen.module.css";
 import GameOver from "../GameOver";
 import "../../App.css";
 
-type Position = {
-  x: number;
-  y: number;
-};
+import { Position } from "../../lib/gameTypes";
 
 const GameScreen = () => {
   const [score, setScore] = useState<number>(0);

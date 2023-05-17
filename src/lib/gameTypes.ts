@@ -9,13 +9,7 @@ export type Game = {
   score: number;
 };
 
-export type storeState = {
-  time: number;
-  score: number;
-  activeID: number;
-  gameOn: boolean;
-  db_scores: never[];
-  showModal: boolean;
-  user: {};
-  showPopUp: boolean;
+export type Position = {
+  x: number;
+  y: number;
 };
