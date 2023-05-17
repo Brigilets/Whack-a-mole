@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Game } from "../lib/gameTypes";
+import styles from "./Leaderboard.module.css";
 
 const Leaderboard = () => {
   const [top10games, setTop10Games] = useState<Game[]>([]);
@@ -29,12 +30,15 @@ const Leaderboard = () => {
   }, []);
 
   return (
-    <div style={{ color: "blue" }}>
-      {top10games.map((game) => (
-        <p key={game.id}>
-          {game.player}: {game.score}
-        </p>
-      ))}
+    <div className={styles.main}>
+      <h1>Leader board</h1>
+      <ol>
+        {top10games.map((game) => (
+          <li key={game.id}>
+            {game.player} : {game.score}
+          </li>
+        ))}
+      </ol>
     </div>
   );
 };

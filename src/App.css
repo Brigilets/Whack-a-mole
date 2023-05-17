@@ -11,11 +11,13 @@
 .startGame {
   width: fit-content;
   padding: 1em 1.5em;
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-family: "Titan One", cursive;
-  border: 4px ridge rgb(179, 38, 54);
-  color: rgba(206, 33, 53, 0.889);
-  background-color: rgb(83, 189, 83);
+  border: 9px ridge rgb(179, 38, 54);
+  color: rgb(140, 20, 34);
+  background-color: rgb(226, 167, 65);
+  text-shadow: 4px 4px 8px rgba(241, 213, 98, 0.743),
+    -4px -4px 8px rgba(238, 218, 140, 0.743);
   border-radius: 6px;
   text-decoration: none;
 }

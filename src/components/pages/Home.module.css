@@ -8,7 +8,8 @@
 }
 
 .main > h1 {
-  color: rgb(114, 31, 41);
+  color: rgb(140, 20, 34);
   font-size: 3em;
-  padding: 5%;
+  text-shadow: 4px 4px 8px rgba(204, 139, 74, 0.743),
+    -4px -4px 8px rgba(246, 231, 69, 0.743);
 }
