@@ -40,9 +40,10 @@
   font-size: 1em;
   padding: 0.4em;
   font-family: "Titan One", cursive;
-  border: 4px ridge rgb(179, 38, 54);
-  color: rgba(206, 33, 53, 0.889);
-  background-color: rgb(83, 189, 83);
+
+  border: 10px ridge rgb(179, 38, 54);
+  color: rgb(204, 47, 65);
+  background-color: rgb(226, 167, 65);
   border-radius: 6px;
   cursor: url("../../assets/WAM_Hammer.png");
 }
