@@ -10,7 +10,7 @@ type Position = {
 
 const GameScreen = () => {
   const [score, setScore] = useState<number>(0);
-  const [time, setTime] = useState<number>(10);
+  const [time, setTime] = useState<number>(120);
 
   const [gameOver, setGameOver] = useState<boolean>(false);
   const [gameStarted, setGameStarted] = useState<boolean>(false);
