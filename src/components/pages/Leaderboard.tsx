@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Game } from "../../lib/gameTypes";
 
 const Leaderboard = () => {
-  const [games, setGames] = useState<Game[]>();
+  const [games, setGames] = useState<Game[]>([]);
+  console.log(games);
 
   useEffect(() => {
     const fetchData = async () => {

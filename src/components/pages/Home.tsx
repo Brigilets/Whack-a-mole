@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import styles from "./Home.module.css";
 
 import "../../App.css";
+
 const Home = () => {
   return (
     <div className={styles.main}>

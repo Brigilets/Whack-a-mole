@@ -4,10 +4,12 @@
 .infoPanel {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   font-family: "Titan One", cursive;
-  font-size: 3em;
+  font-size: 2.5em;
   padding-top: 2em;
   color: rgb(204, 47, 65);
+  height: 15%;
 }
 
 .board {
@@ -15,7 +17,7 @@
   height: 50vh;
   display: grid;
   place-items: center;
-  padding-top: 8em;
+  padding-top: 4em;
   margin: auto;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -31,4 +33,40 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: url("../../assets/WAM_Hammer.png"), auto;
+}
+
+.startBtn {
+  font-size: 1em;
+  padding: 0.4em;
+  font-family: "Titan One", cursive;
+  border: 4px ridge rgb(179, 38, 54);
+  color: rgba(206, 33, 53, 0.889);
+  background-color: rgb(83, 189, 83);
+  border-radius: 6px;
+  cursor: url("../../assets/WAM_Hammer.png");
+}
+.gameOver {
+  font-size: 0.8em;
+  border: 4px ridge rgb(179, 38, 54);
+  padding: 0 0.3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 191, 117);
+  z-index: 2;
+}
+
+.gameOver > section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5em;
+  font-size: 1em;
+  padding: 0 0.3em;
+}
+.gameOver > span {
+  margin: 0;
+  font-size: 2em;
 }

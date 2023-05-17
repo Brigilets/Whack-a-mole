@@ -1,17 +1,30 @@
-import { ChangeEvent, FC } from "react";
+import { FC } from "react";
+import { NavLink } from "react-router-dom";
 
 type GameOverProps = {
   score: number;
+  className: string;
 };
 
-const GameOver: FC<GameOverProps> = ({ score }) => {
-  //   const handleClose = useCallback(() => {});
+const GameOver: FC<GameOverProps> = ({ score, className }) => {
   return (
-    <>
-      <h2>Game over</h2>
+    <div className={className}>
+      <section>
+        <h3>Game over</h3>
+        <NavLink
+          to="/"
+          style={{
+            textDecoration: "none",
+            color: "inherit",
+            fontWeight: 900,
+            fontSize: "1.4em",
+          }}
+        >
+          X
+        </NavLink>
+      </section>
       <span>{score}</span>
-      <button></button>
-    </>
+    </div>
   );
 };
 
