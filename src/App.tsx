@@ -9,11 +9,10 @@ import "./App.css";
 //pages
 import Home from "./components/pages/Home";
 import GameScreen from "./components/pages/GameScreen";
-import RootLayout from "./components/RootLayout";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" /*element={RootLayout} */>
+    <Route path="/">
       <Route index element={<Home />} />
       <Route path="game" element={<GameScreen />} />
     </Route>
